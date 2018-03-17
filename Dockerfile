@@ -28,6 +28,8 @@ RUN cd /tmp \
     && rm dolibarr.tar.gz \
     && chown -R www-data:www-data /var/www/html
 
+COPY pdf_mycrabe.modules.php /var/www/html/core/modules/facture/doc/pdf_mycrabe.modules.php
+
 WORKDIR ["/var/www/html"]
 VOLUME ["/var/www/html/conf", "/var/www/html/documents"]
 ENTRYPOINT ["/docker-entrypoint.sh"]
