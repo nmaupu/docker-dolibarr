@@ -1536,7 +1536,7 @@ class pdf_mycrabe extends ModelePDFFactures
 
 		// Logo
 		$logo=$conf->mycompany->dir_output.'/logos/'.$this->emetteur->logo;
-		if ($this->emetteur->logo && false)
+		if ($this->emetteur->logo)
 		{
 			if (is_readable($logo))
 			{
